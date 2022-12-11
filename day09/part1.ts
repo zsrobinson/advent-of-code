@@ -23,18 +23,13 @@ for (const line of lines) {
 
     headStates.unshift(newHead);
 
-    // if new head is within one of the tail, continue
     if (
-      !(
-        (
-          withinOne(newHead.x, tailStates[0].x) &&
-          withinOne(newHead.y, tailStates[0].y)
-        ) /* ||
-        i === parseInt(distance) - 1 */
-      )
-    ) {
-      tailStates.unshift({ ...headStates[1] });
-    }
+      withinOne(newHead.x, tailStates[0].x) &&
+      withinOne(newHead.y, tailStates[0].y)
+    )
+      continue;
+
+    tailStates.unshift({ ...headStates[1] });
   }
 }
 const tailStatesStrings = tailStates.map((state) => JSON.stringify(state));
