@@ -1,10 +1,12 @@
-# Advent of Code 2022
+# Advent of Code
 
-My first attempt at the [Advent of Code](https://adventofcode.com/), written in TypeScript. This might not be the most *elegant* code in the world, but it seems like the goal of this challenge is to prioritize speed over the theoretical best possible solution. 
+A collection of my attempts at the various [advent of codes](https://adventofcode.com/) over the years. As a fair warning, I doubt that this will be the most elegant code in the world given that the goal is to generally prioritize speed.
 
-To run the code, `cd` into that day's directory and execute `deno run --allow-read [file].ts`. The `--watch` flag can also be added to automatically run the code on save.
+Each folder in this repository is the year of that challenge, along with the language I used for that set of solutions. For example, my first year doing this was 2022 and I used Typescript, so that folder's name is `2022-ts`. Inside each of these folders, there's an additional folder for each day which contains the input text and the solution for part one and two.
 
-**Boilerplate:**
-```ts
-const input = await Deno.readTextFile("./input.txt");
-```
+## Project Setups
+
+- 2022: Typescript, [Deno](https://deno.com/) runtime
+  - run the file: `deno run --allow-read [file].ts`
+  - run the file and watch for changes: `deno run --allow-read --watch [file].ts`
+  - read file input: `const input = await Deno.readTextFile("./input.txt");`
