@@ -6,7 +6,7 @@ Each folder in this repository is the year of that challenge, along with the lan
 
 ## Project Setups
 
-- 2022: Typescript, [Deno](https://deno.com/) runtime
+- 2022, 2023: Typescript using the [Deno](https://deno.com/) runtime
   - run the file: `deno run --allow-read [file].ts`
   - run the file and watch for changes: `deno run --allow-read --watch [file].ts`
   - read file input: `const input = await Deno.readTextFile("./input.txt");`
