@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("demo3.txt");
+const input = await Deno.readTextFile("input.txt");
 const lines = input.split("\n").filter((line) => line.length > 0);
 
 type Children = [string, string];
